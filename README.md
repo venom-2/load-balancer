@@ -48,12 +48,12 @@ load-balancer-practice/
 ├── nginx/
 │   └── nginx.conf
 │
-├── app1/
+├── server1/
 │   ├── Dockerfile
 │   ├── pom.xml
 │   └── src/
 │
-└── app2/
+└── server2/
     ├── Dockerfile
     ├── pom.xml
     └── src/
@@ -133,14 +133,14 @@ cd load-balancer
 ### App1
 
 ```bash
-cd app1
+cd server1
 mvn clean package
 ```
 
 ### App2
 
 ```bash
-cd ../app2
+cd ../server2
 mvn clean package
 ```
 
