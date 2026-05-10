@@ -8,6 +8,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "Response from Spring Boot Server 1";
+        return "Response from Spring Boot Server 1 after adding Github actions workflow";
     }
 }
