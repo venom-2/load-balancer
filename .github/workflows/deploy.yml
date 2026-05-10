@@ -21,6 +21,16 @@ jobs:
 
           script: |
             cd ~/load-balancer/load-balancer
+
             git pull origin main
+
+            cd server1
+            mvn clean package -DskipTests
+
+            cd ../server2
+            mvn clean package -DskipTests
+
+            cd ..
+
             docker-compose down
             docker-compose up --build -d
